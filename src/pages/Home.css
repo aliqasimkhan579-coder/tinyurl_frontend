@@ -1,0 +1,39 @@
+* { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+.home { min-height: 100vh; background: #f8fafc; }
+
+/* NAVBAR */
+.navbar {
+  background: #1a2e8a;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 16px 60px;
+  gap: 40px;
+}
+.logo { font-size: 24px; font-weight: 900; }
+.navbar ul { display: flex; list-style: none; gap: 25px; }
+.navbar .right { margin-left: auto; display: flex; gap: 20px; align-items: center; }
+.navbar .right button { background: #0f224f; color: white; border: 1px solid #3b5bb5; padding: 6px 12px; border-radius: 5px; cursor: pointer; }
+
+/* HERO - THIS WAS YOUR PROBLEM */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 90px;
+  gap: 60px;
+}
+.hero-left { flex: 1; }
+.hero-left .badge { background: #e0e7ff; color: #1a2e8a; padding: 4px 10px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+.hero-left h1 { font-size: 48px; line-height: 1.1; margin: 15px 0; color: #0f172a; }
+.hero-left p { color: #64748b; margin-bottom: 20px; }
+.btns { display: flex; gap: 12px; }
+.btns .outline { padding: 10px 18px; border: 1px solid #ccc; background: white; border-radius: 6px; cursor: pointer; }
+.btns .fill { padding: 10px 18px; background: #1a2e8a; color: white; border: none; border-radius: 6px; cursor: pointer; }
+
+.hero-right { width: 340px; }
+.url-box { background: white; border: 1px solid #e2e8f0; padding: 20px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); display: flex; flex-direction: column; }
+.url-box label { font-size: 12px; font-weight: 600; margin-top: 12px; }
+.url-box input, .url-box select { width: 100%; margin-top: 6px; padding: 9px; border: 1px solid #ddd; border-radius: 6px; }
+.mt { margin-top: 12px; }
+.shorten { margin-top: 18px; background: #e2e8f0; border: none; padding: 10px; border-radius: 6px; cursor: pointer; font-weight: 600; }

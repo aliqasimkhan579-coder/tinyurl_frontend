@@ -1,0 +1,84 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  background: #1e3a8a;
+  background: linear-gradient(to right, #2a5db0, #1a2e6d);
+  color: white;
+  padding: 16px 60px;
+  gap: 50px;
+}
+.logo {
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+.nav-links li {
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 5px;
+  opacity: 0.9;
+}
+.auth {
+  margin-left: auto;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.auth button {
+  background: #0f224f;
+  border: 1px solid #3b5bb5;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* MEGA MENU */
+.mega-menu {
+  position: absolute;
+  top: 38px;
+  left: -300px;
+  width: 950px;
+  background: #f8fafc;
+  color: #111;
+  display: flex;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  padding: 30px 40px;
+  z-index: 20;
+}
+.menu-left { width: 180px; }
+.menu-left h2 { font-size: 26px; color: #1e293b; font-weight: 700; }
+
+.menu-right {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px 40px;
+}
+.res-item h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #1a1a1a;
+}
+.res-item p {
+  font-size: 12px;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+/* Hover behavior */
+.resources-hover .mega-menu { display: flex; } /* Always visible for demo */
+.resources-hover:hover .mega-menu { display: flex; }
+
+/* If you want hover-only, use this: */
+/*
+.resources-hover .mega-menu { display: none; }
+.resources-hover:hover .mega-menu { display: flex; }
+*/

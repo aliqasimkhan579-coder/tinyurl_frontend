@@ -1,0 +1,43 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  background: #1a2e6d;
+  color: white;
+  padding: 15px 60px;
+  gap: 50px;
+  position: relative;
+}
+.logo { font-size: 26px; font-weight: 900; letter-spacing: 1px; }
+.nav-links { display: flex; list-style: none; gap: 30px; }
+.nav-links li { cursor: pointer; position: relative; padding: 5px 0; }
+.auth { margin-left: auto; display: flex; gap: 20px; align-items: center; }
+.auth button { background: #0f224f; border: 1px solid #2a4a9b; color: white; padding: 7px 14px; border-radius: 6px; cursor: pointer; }
+
+/* MEGA MENU */
+.mega-menu {
+  position: absolute;
+  top: 40px;
+  left: -150px;
+  width: 850px;
+  background: #f8fafc;
+  color: #1a2e6d;
+  display: flex;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  padding: 30px;
+  z-index: 10;
+}
+.menu-left { width: 180px; }
+.menu-left h3 { font-size: 26px; font-weight: 700; }
+.menu-right {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px 40px;
+}
+.feature-item h4 { font-size: 14px; font-weight: 700; margin-bottom: 6px; color: #1a1a1a; }
+.feature-item p { font-size: 12px; color: #666; line-height: 1.4; }
+
+/* Show on hover - same as tinyurl.com */
+.features-hover:hover .mega-menu { display: flex; }
+.features-hover .mega-menu { display: flex; } /* keep visible for demo - remove this line if you want hover only */

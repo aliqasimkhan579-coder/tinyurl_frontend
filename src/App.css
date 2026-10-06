@@ -1,0 +1,109 @@
+/* ========== GLOBAL ========== */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', Arial, sans-serif; }
+body { background: #f8fafc; overflow-x: hidden; }
+a { text-decoration: none; }
+
+/* ========== NAVBAR - COMMON FOR ALL ========== */
+.navbar {
+  background: #1a2e6d;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 16px 60px;
+  gap: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo { font-size: 26px; font-weight: 900; letter-spacing: 1px; }
+.navbar ul { display: flex; list-style: none; gap: 30px; }
+.navbar ul li { cursor: pointer; opacity: 0.85; padding-bottom: 3px; position: relative; }
+.navbar ul li.active, .navbar ul li:hover { opacity: 1; border-bottom: 2px solid white; }
+.nav-right, .auth, .right { margin-left: auto; display: flex; gap: 20px; align-items: center; }
+.nav-right button, .auth button, .right button {
+  background: #0f224f; border: 1px solid #3b5bb5; color: white;
+  padding: 8px 16px; border-radius: 6px; cursor: pointer;
+}
+
+/* ========== 1. HOME PAGE ========== */
+.home { min-height: 100vh; background: #f8fafc; }
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 90px;
+  gap: 60px;
+}
+.hero-left { flex: 1; }
+.hero-left .badge { background: #e0e7ff; color: #1a2e6d; padding: 4px 10px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+.hero-left h1 { font-size: 52px; line-height: 1.1; margin: 15px 0; color: #0f172a; font-weight: 800; }
+.hero-left p { color: #64748b; margin-bottom: 20px; line-height: 1.5; }
+.btns { display: flex; gap: 12px; }
+.btns .outline { padding: 10px 18px; border: 1px solid #ccc; background: white; border-radius: 6px; cursor: pointer; }
+.btns .fill { padding: 10px 18px; background: #1a2e6d; color: white; border: none; border-radius: 6px; cursor: pointer; }
+.hero-right { width: 360px; }
+.url-box { background: white; border: 1px solid #e2e8f0; padding: 22px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); display: flex; flex-direction: column; }
+.url-box label { font-size: 12px; font-weight: 600; margin-top: 14px; color: #333; }
+.url-box input, .url-box select { width: 100%; margin-top: 6px; padding: 10px; border: 1px solid #ddd; border-radius: 6px; outline: none; }
+.url-box .shorten { margin-top: 18px; background: #e2e8f0; border: none; padding: 11px; border-radius: 6px; cursor: pointer; font-weight: 600; }
+
+/* ========== 2. PLANS PAGE ========== */
+.pricing-section { padding: 40px 60px; background: #f8fafc; }
+.pricing-header { display: flex; justify-content: space-between; align-items: center; }
+.pricing-header h1 { font-size: 36px; color: #1a2e6d; }
+.toggle { background: #e2e8f0; border-radius: 30px; padding: 4px; display: flex; }
+.toggle button { border: none; padding: 8px 18px; border-radius: 30px; cursor: pointer; background: transparent; }
+.toggle .active { background: #1a2e6d; color: white; }
+.pricing-grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr 1fr; gap: 20px; margin-top: 40px; }
+.intro-card h2 { font-size: 24px; color: #1a2e6d; margin-bottom: 15px; line-height: 1.3; }
+.intro-card p { margin-bottom: 15px; color: #333; line-height: 1.5; font-size: 14px; }
+.plan-card { background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 25px; }
+.plan-card h3 { color: #333; font-size: 18px; }
+.plan-card h2 { font-size: 28px; margin: 10px 0 5px; }
+.plan-card h2 span { font-size: 16px; font-weight: 400; }
+.yr { font-size: 12px; color: #666; }
+.desc { font-size: 13px; margin: 15px 0; color: #555; line-height: 1.4; }
+
+/* ========== 3. DOMAINS PAGE ========== */
+.domains-page { min-height: 100vh; background: linear-gradient(135deg, #0a0a2a 0%, #0e1a4a 30%, #0f3a7a 100%); color: white; }
+.domains-page .hero { background: transparent; }
+.domains-page .hero-text { width: 50%; }
+.domains-page .hero-text h1 { font-size: 52px; color: white; line-height: 1.2; }
+.domains-page .hero-text p { color: rgba(255,255,255,0.9); }
+.get-started { margin-top: 20px; background: #1ec4e0; color: #0a0a2a; border: none; padding: 12px 24px; border-radius: 6px; font-weight: 700; cursor: pointer; }
+
+/* ========== 4. FEATURES & RESOURCES MEGA MENU ========== */
+.mega-menu { position: absolute; top: 38px; left: -200px; width: 850px; background: #f8fafc; color: #111; display: flex; border-radius: 0 0 12px 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.15); padding: 30px; z-index: 20; }
+.menu-left { width: 180px; }
+.menu-left h2, .menu-left h3 { font-size: 26px; color: #1e293b; }
+.menu-right { flex: 1; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 25px 40px; }
+.feature-item h4, .res-item h4 { font-size: 14px; font-weight: 700; margin-bottom: 5px; color: #1a1a1a; }
+.feature-item p, .res-item p { font-size: 12px; color: #64748b; line-height: 1.4; }
+.features-hover .mega-menu, .resources-hover .mega-menu { display: none; }
+.features-hover:hover .mega-menu, .resources-hover:hover .mega-menu { display: flex; }
+
+/* ========== 5. LOGIN PAGE ========== */
+.login-page { min-height: 100vh; background: #f8fbfd; }
+.login-header, .signup-header { padding: 25px 50px; background: white; border-bottom: 1px solid #e5e7eb; }
+.login-container { max-width: 420px; margin: 60px 0 0 120px; }
+.login-container h2, .signup-container h2 { font-size: 36px; font-weight: 800; color: #111827; }
+.sub { margin: 8px 0 25px; color: #555; }
+.sub span { color: #0d6efd; font-weight: 600; cursor: pointer; }
+.divider { border-top: 1px solid #ddd; position: relative; margin: 25px 0; text-align: center; }
+.divider span { position: relative; top: -10px; background: #f8fbfd; padding: 0 15px; color: #666; font-size: 14px; }
+.login-container form { display: flex; flex-direction: column; }
+.login-container form label { font-size: 14px; font-weight: 600; margin: 15px 0 6px; color: #333; }
+.login-container form input { padding: 12px; border: 1px solid #ddd; border-radius: 6px; outline: none; }
+.pass-box { display: flex; align-items: center; border: 1px solid #ddd; border-radius: 6px; background: white; padding-right: 12px; }
+.pass-box input { border: none; flex: 1; padding: 12px; outline: none; }
+.options { display: flex; justify-content: space-between; align-items: center; margin: 18px 0; font-size: 13px; }
+.login-btn, .signup-btn { background: #1a2e6d; color: white; border: none; padding: 12px; border-radius: 6px; cursor: pointer; margin-top: 10px; }
+
+/* ========== 6. SIGNUP PAGE ========== */
+.signup-container { max-width: 460px; margin: 50px 0 0 120px; }
+.signup-container input[type="text"], .signup-container input[type="email"] { padding: 12px; border: 1px solid #ddd; border-radius: 6px; outline: none; }
+.security { display: flex; align-items: center; gap: 10px; margin-top: 8px; }
+.security .bar { flex: 1; height: 4px; background: #e5e7eb; border-radius: 4px; overflow: hidden; }
+.security .fill { height: 100%; background: #f59e0b; }
+.terms { font-size: 11px; color: #666; margin: 18px 0; line-height: 1.4; }
+.terms a { color: #5ab0c7; }

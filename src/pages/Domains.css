@@ -1,0 +1,73 @@
+.domains-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a2a 0%, #0e1a4a 30%, #0f3a7a 100%);
+  color: white;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 15px 60px;
+  background: rgba(0,0,0,0.1);
+}
+.logo { font-size: 26px; font-weight: 900; letter-spacing: 1px; }
+.navbar ul { display: flex; gap: 30px; list-style: none; margin-left: 60px; }
+.navbar ul li { cursor: pointer; opacity: 0.8; padding-bottom: 3px; }
+.navbar ul li.active { border-bottom: 2px solid white; opacity: 1; }
+.nav-right { margin-left: auto; display: flex; gap: 20px; align-items: center; }
+.nav-right button { background: #0e2a5a; border: 1px solid #2a5bd7; color: white; padding: 8px 16px; border-radius: 6px; cursor: pointer; }
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 90px;
+}
+.hero-text { width: 50%; }
+.hero-text h1 { font-size: 52px; line-height: 1.2; font-weight: 800; margin-bottom: 25px; }
+.hero-text p { font-size: 16px; line-height: 1.6; opacity: 0.9; margin-bottom: 15px; }
+.p2 { font-weight: 600; }
+.get-started {
+  margin-top: 20px;
+  background: #1ec4e0;
+  color: #0a0a2a;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.hero-img { position: relative; width: 50%; display: flex; justify-content: center; }
+.hero-img img { width: 420px; z-index: 2; }
+
+.search-box {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  background: white;
+  color: #666;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  z-index: 3;
+  font-size: 14px;
+  border: 2px solid #1ec4e0;
+}
+.search-box button { background: #1ec4e0; border: none; padding: 6px 14px; border-radius: 6px; color: white; }
+
+.domain-list {
+  position: absolute;
+  top: 90px;
+  right: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 3;
+}
+.d-item { padding: 8px 30px 8px 12px; border-radius: 6px; color: white; font-size: 14px; display: flex; gap: 10px; }
+.d-item.green { background: #2e9d6a; }
+.d-item.yellow { background: #e8b84a; }
+.d-item.blue { background: #2d7bd1; }
